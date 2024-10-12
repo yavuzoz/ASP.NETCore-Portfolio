@@ -26,7 +26,7 @@ MyPortfolio is a dynamic web application designed to showcase personal portfolio
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MyPortfolio.git
+   git clone https://github.com/yavuzoz/MyPortfolio.git
 
 ## Navigate to the project directory
   
