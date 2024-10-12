@@ -1,0 +1,45 @@
+﻿@model MyPortfolio.DAL.Entities.Message
+
+<section id="contact" class="s-contact target-section">
+    <div class="overlay"></div>
+
+    <div class="row narrow section-intro">
+        <div class="col-full">
+            <h3>Contact Us</h3>
+            <h1>Send Us a Message</h1>
+        </div>
+    </div>
+
+    <div class="row contact__main">
+        <div class="col-eight tab-full contact__form">
+            <form name="contactForm" id="contactForm" method="post" action="@Url.Action("CreateMessage", "Message")">
+                <fieldset>
+                    <div class="form-field">
+                        <input name="FullName" type="text" id="contactName" placeholder="Full Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="Email" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="Subject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="MessageDetail" id="contactMessage" placeholder="Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Send</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</section>
