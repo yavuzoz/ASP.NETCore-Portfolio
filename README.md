@@ -29,5 +29,13 @@ MyPortfolio is a dynamic web application designed to showcase personal portfolio
    git clone https://github.com/yourusername/MyPortfolio.git
 
 ## Navigate to the project directory
-   ```bash
+  
      cd MyPortfolio
+     dotnet restore
+     dotnet build
+
+Ensure you update the connection string in the appsettings.json file to point to your SQL Server instance:
+   ```bash
+     "ConnectionStrings": {
+     "MyPortfolioContext": "Server=YOUR_SERVER_NAME;Database=MyPortfolioDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
